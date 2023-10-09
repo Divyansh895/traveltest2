@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Japan</title>  
+
+</head> 
+<body>
+<!-- partial:index.partial.html -->
+<div id="parallax-world-of-ugg">
+  
+  <audio autoplay loop volume="1.0">  
+    <!-- Provide multiple sources for different browser compatibilit  --> 
+    <source src="japan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+<section> 
+  <div class="title">
+    <h1>Japan</h1> 
+  </div>
+</section>
+
+<section> 
+    <div class="parallax-one">
+      <h2>Tokyo</h2>  
+    </div>
+</section>
+
+<section> 
+  <div class="block">
+    <p><span class="first-character sc">T</span>okyo, the bustling capital of Japan, is a city where cutting-edge technology and ancient tradition coexist harmoniously. Skyscrapers tower over historic temples, and neon-lit streets lead to serene gardens. Tokyo is a city of contrasts, where you can experience the latest fashion trends in districts like Harajuku and Shibuya, and then explore the quiet lanes of Asakusa, home to the iconic Senso-ji Temple.
+
+        Tokyo offers a diverse culinary scene, ranging from street food stalls serving savory ramen and sushi to high-end restaurants offering kaiseki, a traditional multi-course meal. The city's vibrant nightlife includes karaoke bars, izakayas (Japanese pubs), and futuristic nightclubs.
+        
+        Art and culture thrive in Tokyo's numerous museums, galleries, and theaters. The city hosts various traditional festivals throughout the year, celebrating cherry blossoms, sumo wrestling, and more. Tokyo Disneyland and Tokyo DisneySea provide entertainment for visitors of all ages.</p>
+  </div>
+</section> 
+
+<section>
+  <div class="parallax-two">
+    <h2>osaka</h2>  
+  </div>
+</section>
+
+<section>
+  <div class="block">
+    <p><span class="first-character ny">O</span>saka, known as the "Kitchen of Japan," is a city renowned for its delicious street food and hearty cuisine. This lively city offers a warm and friendly atmosphere, making visitors feel welcome. Osaka Castle, a symbol of the city, stands tall amidst beautiful cherry blossom parks and gardens.
+
+        Osaka is a paradise for food enthusiasts, offering a wide range of local dishes such as takoyaki (octopus balls), okonomiyaki (savory pancakes), and fresh seafood from Kuromon Ichiba Market. The bustling Dotonbori district is famous for its vibrant nightlife, illuminated by neon signs and filled with entertainment options.
+        
+        Apart from its culinary delights, Osaka is a hub for shopping and entertainment. Luxury boutiques coexist with traditional markets, and theaters host kabuki performances and comedy shows. Universal Studios Japan, located in Osaka, provides thrilling experiences for families and adventure seekers.</p>
+  </div>
+</section>
+
+<section>
+  <div class="parallax-three"> 
+    <h2>kyoto</h2>
+  </div> 
+</section>
+
+<section>
+  <div class="block"> 
+    <p><span class="first-character atw">K</span>yoto, the ancient capital of Japan, is a city steeped in history and spirituality. Home to thousands of temples, shrines, and traditional wooden machiya houses, Kyoto offers a glimpse into Japan's rich cultural heritage. The city is particularly enchanting during cherry blossom season when parks and temples are adorned with delicate pink blooms.
+
+        Kyoto's UNESCO World Heritage Sites, including Kinkaku-ji (Golden Pavilion) and Fushimi Inari Taisha, are architectural marvels surrounded by serene gardens and bamboo groves. Arashiyama Bamboo Grove is a mesmerizing natural attraction where towering bamboo stalks create an otherworldly atmosphere.
+        
+        Traditional tea ceremonies, ikebana (flower arranging), and geisha performances showcase Kyoto's dedication to preserving its cultural traditions. Kyoto's cuisine includes kaiseki (multi-course meal), yudofu (tofu hot pot), and matcha (green tea) sweets, offering a delightful culinary experience.
+        
+        The city's tranquil atmosphere extends to its surrounding natural beauty, with nearby mountains and onsen (hot springs) resorts providing relaxation and scenic views. Kyoto embodies the essence of Japan's past, making it a must-visit destination for travelers seeking a deep cultural experience.</p>
+  </div>
+</section>
+  
+</div> 
+<!-- partial -->
+<div class="goback-button">
+    <button id="goback-button">Go Back</button>
+  </div> 
+  <div class="book-button">  
+    <button onclick="window.location.href='/3D-Parallax-Website-in-JavaScript-main/beaches/trip.html' " id="book-button">Book</button>
+  </div> 
+      <script>
+        document.getElementById("goback-button").addEventListener("click", function() {
+    window.history.back();
+  });
+  
+      </script>
+
+
+<style>
+::selection{
+    color: #FFC0CB;  
+}
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+body{
+  background-color:  #000000;     
+}
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;} 
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: #000000; padding: 60px; margin:0 auto; text-align:center;} 
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px; color: whitesmoke;}  
+
+ /* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: #FFC0CB; padding: 60px; width:820px; margin:0 auto; text-align:justify;} 
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}            
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(tokyo.jpg); border-radius: 10px; background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(osaka.jpg); border-radius: 10px; background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(kyoto.jpg); border-radius: 10px;background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+
+.goback-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.goback-button button {
+  background-color: #38c0d8;
+  color: white;
+  border: none; 
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.6s linear;/* Add a smooth transition effect for the button */
+} 
+ 
+.goback-button button:hover {
+  background: linear-gradient(45deg, #54dbd0, #2196F3); /* Gradient colors transitioning from green to blue */
+  border-radius: 50px; /* Increase border radius on hover */
+  color: white;
+  text-decoration: underline;
+}  
+ 
+
+
+/* Add custom scrollbar styles */
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #4e9bec; /* Set your desired blue color */
+    border-radius: 6px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set a background color for the scrollbar track */
+  }
+  
+  /* For Firefox */
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: #6baff8 #f1f1f1; /* Set your desired blue color and background color */
+  }
+  
+  /* Hide the default scrollbar for IE and Edge */
+  body {
+    -ms-overflow-style: none;
+  }
+  
+  body::-ms-scrollbar {
+    display: none;
+  }
+   
+
+  .book-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+  }
+   
+  .book-button button {
+    background-color: #ce3030;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.6s linear;/* Add a smooth transition effect for the button */
+  } 
+   
+  .book-button button:hover {
+    background: linear-gradient(45deg, #54dbd0, #21f380); /* Gradient colors transitioning from green to blue */
+    border-radius: 50px; /* Increase border radius on hover */
+    color: white;
+    text-decoration: underline;
+  }  
+</style>
+
+</body>
+</html>
