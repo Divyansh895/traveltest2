@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-pUA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head> 
+
+<audio autoplay loop volume="1.0">  
+  <!-- Provide multiple sources for different browser compatibility --> 
+  <source src="lemonde.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<body>
+  <!-- //navbar  -->
+  <header>
+    <nav id="navbar"> 
+      <a href="#home"><img src="logo.png" alt="Travel" class="logo"></a>  
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+     
+      <ul>
+        <li>
+          <a href="#home" id="home1">Home</a>
+        </li>   
+        <li> 
+          <a href="#explore" id="explore1">Explore</a>
+        </li>
+        <li>
+          <a href="#faq" id="faq1">FAQ</a>
+        </li>
+        <li>
+          <a href="#about" id="about1">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  
+<section id="home">
+<main > 
+  <div class="vigneete"></div>
+  <img src="img/background.png" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-distance="-200" class="parallax bg-img">
+
+  <img src="img/fog_7.png" data-speedx="0.27" data-speedy="0.32" data-speedz="0" data-distance="850" class="parallax fog-7">
+  
+  <img src="img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" data-speedz="0" data-distance="1100" class="parallax mountain-10">
+  
+  <img src="img/mountain_9.png" data-speedx="0.125" data-speedy="0.155" data-speedz="0.15" data-distance="1400" class="parallax mountain-9">
+  
+  <img src="img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" data-speedz="0" data-distance="1700" class="parallax mountain-8">
+  
+  <img src="img/fog_5.png" data-speedx="0.16"  data-speedy="0.105" data-speedz="0" data-distance="1800" class="parallax fog-5">
+  
+  <img src="img/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-distance="2000" class="parallax mountain-7">
+  <div class="text parallax" data-speedx="0.07"  data-speedy="0.07 " data-speedz="0" data-distance="0">
+    <h2>Youva</h2> 
+    <h1>tourism</h1>  
+    <h4>"Embark on Dreams, Explore Reality: Your Journey, Our Expertise!"</h4>
+  </div> 
+  
+  <img src="img/mountain_6.png" data-speedx="0.065"  data-speedy="0.05" data-speedz="0.05" data-distance="2300"  class="parallax mountain-6">
+  
+  <img src="img/fog_4.png" data-speedx="0.135" data-speedz="0" class="parallax fog-4" data-distance="2400">
+  
+  <img src="img/mountain_5.png"  data-speedx="0.08" data-speedz="0.13" data-speedy="0.0305" data-distance="2550" class="parallax mountain-5">
+  
+  <img src="img/fog_2.png"  data-speedx="0.11"  data-speedy="0.018" data-speedz="0" data-distance="2800" class="parallax fog-3">
+  
+  <img src="img/mountain_4.png" data-speedx="0.059"  data-speedy="0.024" data-speedz="0.35" data-distance="3200" class="parallax mountain-4">
+  
+  <img src="img/mountain_3.png" data-speedx="0.04"  data-speedy="0.018" data-speedz="0.32" data-distance="3400" class="parallax mountain-3">
+  
+  <img src="img/fog_2.png" data-speedx="0.15"  data-speedy="0.0115" data-speedz="0" data-distance="3600" class="parallax fog-2">
+  
+  <img src="img/mountain_2.png" data-speedx="0.0235"  data-speedy="0.013" data-speedz="0.42" data-distance="3800" class="parallax mountain-2">
+  
+  <img src="img/mountain_1.png" data-speedx="0.027"  data-speedy="0.018" data-speedz="0.53" data-distance="4000" class="parallax mountain-1"> 
+  
+  <img src="img/sun_rays.png"  class="sun-rays">
+  
+  <img src="img/black_shadow.png" class="black-shadow"> 
+  
+  <img src="img/fog_1.png" class="parallax fog-1" data-speedx="0.12"  data-speedy="0.01" data-distance="4200">
+</main>
+</section>  
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+
+
+  <!-- //cards -->
+<section id="explore">  
+<h1 class="title">Planning Your Own Travel ?</h1>  
+<h2 class="title">We Are Right Here To Help You</h2>  
+
+<div id="app" class="container">
+  <card onclick="redirectToBeach()" data-image="https://images.unsplash.com/photo-1479659929431-4342107adfc1?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">Beaches</h1>
+    <p slot="content">Sun-kissed sands, crystal waters, and endless coastal bliss beckon travelers.</p>
+  </card>
+                        
+  <card onclick="redirectToMountain()" data-image="images/mountain.jpg">   
+    <h1 slot="header">Mountains</h1> 
+    <p slot="content">"Discover towering peaks, serene landscapes, adventure, and tranquility in majestic mountain ranges worldwide."</p> 
+  </card>
+  <card onclick="redirectToCity()" data-image="images/city.jpg">
+    <h1 slot="header">Cities</h1>
+    <p slot="content">Vibrant cultures, diverse experiences, and urban adventures await in bustling metropolises.</p>
+  </card> 
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+
+
+
+</section>   
+
+
+
+
+
+<!-- partial -->
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700'><link rel="stylesheet" href="./choose.css"> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./choose.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/app.js"></script> 
+</style> 
+
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('show');
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });  
+  });
+
+  function redirectToBeach() {
+    window.location.href = '/3D-Parallax-Website-in-JavaScript-main/beaches/beaches1.html';
+  }
+
+  function redirectToMountain() {
+    window.location.href = '/3D-Parallax-Website-in-JavaScript-main/mountains/mountain.html';
+  }
+
+  function redirectToCity() {
+    window.location.href = '/3D-Parallax-Website-in-JavaScript-main/city/city.html';
+  }
+
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('show');
+});
+ 
+// Add click event listener to the hamburger icon only once
+document.querySelector('.hamburger i').addEventListener('click', function() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
+});
+
+// Add click event listener to navigation links inside the expanded menu
+document.querySelectorAll('#navbar ul li a').forEach(link => {
+    link.addEventListener('click', function() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.remove('show'); // Close the expanded menu
+    });
+});
+
+
+
+
+ 
+
+let isHamburgerClicked = false; // Variable to track hamburger button click
+
+// Function to handle the visibility of the expanded header
+function handleExpandedHeader() {
+    const navbar = document.getElementById('navbar');
+    const hamburgerIcon = document.querySelector('.hamburger i');
+
+    // Check if the window width is greater than or equal to 768 pixels
+    if (window.innerWidth >= 768) {
+        navbar.classList.remove('show'); // Hide the expanded header
+    } else {
+        // Show the expanded header only if the hamburger button was clicked
+        if (isHamburgerClicked) {
+            navbar.classList.add('show');
+        } else {
+            navbar.classList.remove('show');
+        }
+    }
+}
+
+// Event listener for the hamburger icon click
+document.querySelector('.hamburger i').addEventListener('click', function() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
+    this.classList.toggle('active'); // Toggle active class for the hamburger icon
+    isHamburgerClicked = !isHamburgerClicked; // Toggle the hamburger click status
+    handleExpandedHeader(); // Call the function to handle expanded header visibility
+});
+
+// Event listener for window resize
+window.addEventListener('resize', handleExpandedHeader);
+
+ 
+</script>
+</body> 
+</html>
+
+
